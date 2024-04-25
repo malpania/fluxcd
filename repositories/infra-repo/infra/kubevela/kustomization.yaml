@@ -1,4 +1,13 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
-resources:
-- namespace.yaml
+metadata:
+  name: kubevela
+  namespace: default
+spec:
+  interval: 15m
+  path: "./repositories/infra-repo/infra/kubevela"
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: kubevela
