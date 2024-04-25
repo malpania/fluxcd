@@ -6,7 +6,7 @@ metadata:
   namespace: vela-system
 spec:
   interval: 1m
-  url: https://kubevela.github.io/charts
+  url: https://stefanprodan.github.io/podinfo
 
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2beta2
@@ -16,11 +16,10 @@ metadata:
   namespace: vela-system
 spec:
   interval: 5m
-  releaseName: kubevela
+  releaseName: podinfo
   chart:
     spec:
-      chart: kubevela/vela-core
-      version: 0.1.0
+      chart: podinfo
       sourceRef:
         kind: HelmRepository
         name: kubevela
