@@ -17,7 +17,7 @@ metadata:
   name: kubevela
   namespace: default
 spec:
-  interval: 15m
+  interval: 1m
   path: "./repositories/infra-repo/infra/kubevela/deploy"
   prune: false
   sourceRef:
