@@ -4,4 +4,3 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - ../../../apps/example-app-2/kustomization.yaml
-#- ../../../infra/kubevela/kustomization.yaml
