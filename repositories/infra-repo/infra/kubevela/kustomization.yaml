@@ -19,7 +19,7 @@ metadata:
 spec:
   interval: 15m
   path: "./repositories/infra-repo/infra/kubevela/deploy"
-  prune: true
+  prune: false
   sourceRef:
     kind: GitRepository
     name: kubevela
