@@ -18,7 +18,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: vela-core
+      chart: kubevela/vela-core
       version: 0.1.0
       sourceRef:
         kind: HelmRepository
