@@ -18,7 +18,7 @@ metadata:
   namespace: default
 spec:
   interval: 15m
-  path: "./repositories/infra-repo/infra/kubevela"
+  path: "./repositories/infra-repo/infra/kubevela/deploy"
   prune: true
   sourceRef:
     kind: GitRepository
